@@ -3,27 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>一般社団法人ふくしま健康デザイン</title>
+<title>一般社団法人ふくしま健康デザイン｜いわき市の地域スポーツクラブ</title>
 <meta name="description" content="いわき市を拠点に、子どもからシニアまで誰もが通える地域のスポーツクラブをつくる一般社団法人ふくしま健康デザインの公式サイトです。">
+<link rel="canonical" href="https://fc-mehikari.org/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="一般社団法人ふくしま健康デザイン｜いわき市の地域スポーツクラブ">
+<meta property="og:description" content="いわき市を拠点に、子どもからシニアまで誰もが通える地域のスポーツクラブをつくる一般社団法人ふくしま健康デザインの公式サイトです。">
+<meta property="og:url" content="https://fc-mehikari.org/">
+<meta property="og:image" content="https://fc-mehikari.org/assets/img/photo-members.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="子どもからシニアまでの参加者がコートで集合した写真">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="一般社団法人ふくしま健康デザイン｜いわき市の地域スポーツクラブ">
+<meta name="twitter:description" content="いわき市を拠点に、子どもからシニアまで誰もが通える地域のスポーツクラブをつくる一般社団法人ふくしま健康デザインの公式サイトです。">
+<meta name="twitter:image" content="https://fc-mehikari.org/assets/img/photo-members.jpg">
+<meta name="twitter:image:alt" content="子どもからシニアまでの参加者がコートで集合した写真">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsOrganization",
+  "name": "一般社団法人ふくしま健康デザイン",
+  "url": "https://fc-mehikari.org/",
+  "logo": "https://fc-mehikari.org/assets/img/logo-kenko.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "いわき市",
+    "addressRegion": "福島県",
+    "addressCountry": "JP"
+  },
+  "telephone": "090-3854-2115",
+  "email": "walkingfootball@fc-mehikari.org",
+  "sameAs": [
+    "https://walking-football.fc-mehikari.org/",
+    "https://events.fc-mehikari.org/",
+    "https://heroes.fc-mehikari.org/"
+  ]
+}
+</script>
 <link rel="icon" href="assets/img/logo-kenko.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">本文へ移動</a>
 
 <!-- ============ ヘッダー ============ -->
-<header class="site-header" id="top">
+<header class="site-header" id="top" tabindex="-1">
   <div class="container header-inner">
     <a class="brand" href="#top">
       <img src="assets/img/logo-kenko.png" alt="" width="44" height="44">
       <span class="brand-text"><small>一般社団法人</small>ふくしま健康デザイン</span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="global-nav">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="global-nav">
       <span class="sr-only">メニュー</span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
-    <nav class="global-nav" id="global-nav">
+    <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
       <a href="#about">私たちについて</a>
       <a href="#sports">種目</a>
       <a href="#business">事業</a>
@@ -35,7 +73,7 @@
   </div>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 
 <!-- ============ ヒーロー ============ -->
 <section class="hero">
@@ -50,8 +88,18 @@
       </div>
     </div>
     <div class="hero-visual">
-      <figure class="hero-photo hero-photo-main"><img src="assets/img/photo-generations.jpg" alt="子どもとシニアと大人が一緒にプレーを楽しむ様子"></figure>
-      <figure class="hero-photo hero-photo-sub"><img src="assets/img/photo-hightouch.png" alt="ハイタッチをする参加者"></figure>
+      <figure class="hero-photo hero-photo-main">
+        <picture>
+          <source srcset="assets/img/photo-generations.webp" type="image/webp">
+          <img src="assets/img/photo-generations.jpg" alt="子どもとシニアと大人が一緒にプレーを楽しむ様子" width="640" height="961" fetchpriority="high">
+        </picture>
+      </figure>
+      <figure class="hero-photo hero-photo-sub">
+        <picture>
+          <source srcset="assets/img/photo-hightouch.webp" type="image/webp">
+          <img src="assets/img/photo-hightouch.png" alt="ハイタッチをする参加者" width="430" height="420">
+        </picture>
+      </figure>
       <div class="hero-badge"><strong>2027</strong><span>年度<br>総合型地域<br>スポーツクラブ<br>設立へ</span></div>
     </div>
   </div>
@@ -59,7 +107,7 @@
 </section>
 
 <!-- ============ 私たちについて ============ -->
-<section class="section about" id="about">
+<section class="section about" id="about" tabindex="-1">
   <div class="container">
     <div class="section-head">
       <p class="section-en">ABOUT</p>
@@ -81,17 +129,17 @@
     <div class="values">
       <div class="value-card">
         <span class="value-icon" aria-hidden="true">01</span>
-        <h4>多世代がつながる</h4>
+        <h3>多世代がつながる</h3>
         <p>子ども・親世代・シニアが同じ場で体を動かし、自然な交流が生まれる場をつくります。</p>
       </div>
       <div class="value-card">
         <span class="value-icon" aria-hidden="true">02</span>
-        <h4>孤立とフレイルを防ぐ</h4>
+        <h3>孤立とフレイルを防ぐ</h3>
         <p>定期的に通える居場所があることが、心と体の健康を支える予防の力になります。</p>
       </div>
       <div class="value-card">
         <span class="value-icon" aria-hidden="true">03</span>
-        <h4>地域の担い手を育てる</h4>
+        <h3>地域の担い手を育てる</h3>
         <p>コーディネーター講習などを通じて、クラブを支え、運営する地域の人を育てます。</p>
       </div>
     </div>
@@ -99,7 +147,7 @@
 </section>
 
 <!-- ============ 楽しめる種目 ============ -->
-<section class="section sports" id="sports">
+<section class="section sports" id="sports" tabindex="-1">
   <div class="container">
     <div class="section-head">
       <p class="section-en">SPORTS</p>
@@ -107,20 +155,20 @@
       <p class="section-lead">走る・蹴るの本格派から、座ったままでも楽しめるものまで。<br class="pc-only">体力や年齢が変わっても、続けられる種目がある。それが「生涯スポーツ」を楽しめるクラブです。</p>
     </div>
     <ul class="sports-grid">
-      <li><span class="sp-level sp-l3">しっかり</span><h4>サッカー</h4><p>仲間とチームで本格的に</p></li>
-      <li><span class="sp-level sp-l3">しっかり</span><h4>ソサイチ</h4><p>7人制のサッカー</p></li>
-      <li><span class="sp-level sp-l3">しっかり</span><h4>フットサル</h4><p>1人参加の個サルも</p></li>
-      <li><span class="sp-level sp-l2">ほどほど</span><h4>ケージボール</h4><p>囲まれたコートで止まらないプレー</p></li>
-      <li><span class="sp-level sp-l2">ほどほど</span><h4>ズンバ</h4><p>音楽にのって楽しく運動</p></li>
-      <li><span class="sp-level sp-l1">ゆったり</span><h4>ウォーキングフットボール</h4><p>走らない・触らない歩くサッカー</p></li>
-      <li><span class="sp-level sp-l1">ゆったり</span><h4>フットゴルフ</h4><p>ボールを蹴ってカップを狙う</p></li>
-      <li><span class="sp-level sp-l1">ゆったり</span><h4>モルック</h4><p>木の棒を投げて点数を競う</p></li>
-      <li><span class="sp-level sp-l1">ゆったり</span><h4>ボッチャ</h4><p>障害の有無に関係なく楽しめる</p></li>
+      <li><span class="sp-level sp-l3">しっかり</span><h3>サッカー</h3><p>仲間とチームで本格的に</p></li>
+      <li><span class="sp-level sp-l3">しっかり</span><h3>ソサイチ</h3><p>7人制のサッカー</p></li>
+      <li><span class="sp-level sp-l3">しっかり</span><h3>フットサル</h3><p>1人参加の個サルも</p></li>
+      <li><span class="sp-level sp-l2">ほどほど</span><h3>ケージボール</h3><p>囲まれたコートで止まらないプレー</p></li>
+      <li><span class="sp-level sp-l2">ほどほど</span><h3>ズンバ</h3><p>音楽にのって楽しく運動</p></li>
+      <li><span class="sp-level sp-l1">ゆったり</span><h3>ウォーキングフットボール</h3><p>走らない・触らない歩くサッカー</p></li>
+      <li><span class="sp-level sp-l1">ゆったり</span><h3>フットゴルフ</h3><p>ボールを蹴ってカップを狙う</p></li>
+      <li><span class="sp-level sp-l1">ゆったり</span><h3>モルック</h3><p>木の棒を投げて点数を競う</p></li>
+      <li><span class="sp-level sp-l1">ゆったり</span><h3>ボッチャ</h3><p>障害の有無に関係なく楽しめる</p></li>
     </ul>
     <p class="sports-note">ほかにも、地域のみなさんの声から種目を増やしていきます。</p>
 
     <!-- 参加申し込み（LINE） -->
-    <div class="join" id="join">
+    <div class="join" id="join" tabindex="-1">
       <div class="join-text">
         <p class="join-label">参加したい方へ</p>
         <h3>スポーツへの参加は、<br class="sp-only">公式LINEからお申し込みください。</h3>
@@ -140,7 +188,7 @@
 </section>
 
 <!-- ============ 事業 ============ -->
-<section class="section business" id="business">
+<section class="section business" id="business" tabindex="-1">
   <div class="container">
     <div class="section-head">
       <p class="section-en">BUSINESS</p>
@@ -150,7 +198,12 @@
 
     <!-- 事業1：総合型地域スポーツクラブ（主軸） -->
     <article class="biz biz-main">
-      <div class="biz-photo"><img src="assets/img/photo-members.jpg" alt="子どもからシニアまでの参加者がコートで集合した写真"></div>
+      <div class="biz-photo">
+        <picture>
+          <source srcset="assets/img/photo-members.webp" type="image/webp">
+          <img src="assets/img/photo-members.jpg" alt="子どもからシニアまでの参加者がコートで集合した写真" width="1200" height="800" loading="lazy">
+        </picture>
+      </div>
       <div class="biz-body">
         <p class="biz-num"><span>1</span>地域のインフラとなる</p>
         <h3>総合型地域スポーツクラブ事業</h3>
@@ -168,19 +221,32 @@
     <div class="biz-row">
       <!-- 事業2：FCメヒカリ -->
       <article class="biz biz-sub">
-        <div class="biz-logo"><img src="assets/img/logo-mehikari.png" alt="FCメヒカリ ロゴ"></div>
+        <div class="biz-logo">
+          <picture>
+            <source srcset="assets/img/logo-mehikari.webp" type="image/webp">
+            <img src="assets/img/logo-mehikari.png" alt="" width="500" height="339" loading="lazy">
+          </picture>
+        </div>
         <div class="biz-body">
           <p class="biz-num"><span>2</span>クラブの入口となるチーム</p>
           <h3>FCメヒカリ</h3>
           <p>2023年、いわき市で初めて立ち上げたウォーキングフットボールクラブ。走らない・触らない「歩くサッカー」で、体力に自信がない方も、子どもからシニアまで同じピッチで楽しめます。国際交流イベントやJリーグサポーターとの交流など、まちの外ともつながっています。</p>
-          <img class="biz-rules" src="assets/img/rules.png" alt="ウォーキングフットボールのルール：走れない、あげない、あたらない">
+          <picture class="biz-rules">
+            <source srcset="assets/img/rules.webp" type="image/webp">
+            <img src="assets/img/rules.png" alt="ウォーキングフットボールのルール：走れない、あげない、あたらない" width="1000" height="465" loading="lazy">
+          </picture>
           <a class="text-link biz-link" href="https://walking-football.fc-mehikari.org/" target="_blank" rel="noopener">FCメヒカリのサイトへ <span aria-hidden="true">→</span></a>
         </div>
       </article>
 
       <!-- 事業3：施設管理 -->
       <article class="biz biz-sub">
-        <div class="biz-photo biz-photo-sm"><img src="assets/img/photo-futsal.jpg" alt="フットサルコートで喜び合う子どもと大人"></div>
+        <div class="biz-photo biz-photo-sm">
+          <picture>
+            <source srcset="assets/img/photo-futsal.webp" type="image/webp">
+            <img src="assets/img/photo-futsal.jpg" alt="フットサルコートで喜び合う子どもと大人" width="1080" height="720" loading="lazy">
+          </picture>
+        </div>
         <div class="biz-body">
           <p class="biz-num"><span>3</span>生涯フットボーラーの拠点</p>
           <h3>施設管理事業</h3>
@@ -197,19 +263,19 @@
 </section>
 
 <!-- ============ 活動 ============ -->
-<section class="section activity" id="activity">
+<section class="section activity" id="activity" tabindex="-1">
   <div class="container">
     <div class="section-head">
       <p class="section-en">ACTIVITY</p>
       <h2>これまでの活動</h2>
     </div>
     <ul class="activity-grid">
-      <li><span class="act-tag">交流</span><h4>国際交流イベント</h4><p>スポーツを通じて、国や言葉をこえた交流の場をつくりました。</p></li>
-      <li><span class="act-tag">交流</span><h4>Jリーグサポーターとの交流イベント</h4><p>地域のクラブを応援する人たちと一緒にボールを蹴りました。</p></li>
-      <li><span class="act-tag">教育</span><h4>市民講座・小学校での体験会</h4><p>学校や公民館に出向き、子どもから大人まで体験の機会を届けています。</p></li>
-      <li><span class="act-tag">人材育成</span><h4>コーディネーター講習</h4><p>クラブを支える担い手を、地域の中から育てています。</p></li>
-      <li><span class="act-tag">健康づくり</span><h4>好間 メヒカリ健康フィールド</h4><p>定期的に体を動かし、おしゃべりできる地域の居場所です。</p></li>
-      <li><span class="act-tag">にぎわい</span><h4>キッチンカーなど人が集まる企画</h4><p>スポーツをしない人も立ち寄れる、にぎわいの場をつくっています。</p></li>
+      <li><span class="act-tag">交流</span><h3>国際交流イベント</h3><p>スポーツを通じて、国や言葉をこえた交流の場をつくりました。</p></li>
+      <li><span class="act-tag">交流</span><h3>Jリーグサポーターとの交流イベント</h3><p>地域のクラブを応援する人たちと一緒にボールを蹴りました。</p></li>
+      <li><span class="act-tag">教育</span><h3>市民講座・小学校での体験会</h3><p>学校や公民館に出向き、子どもから大人まで体験の機会を届けています。</p></li>
+      <li><span class="act-tag">人材育成</span><h3>コーディネーター講習</h3><p>クラブを支える担い手を、地域の中から育てています。</p></li>
+      <li><span class="act-tag">健康づくり</span><h3>好間 メヒカリ健康フィールド</h3><p>定期的に体を動かし、おしゃべりできる地域の居場所です。</p></li>
+      <li><span class="act-tag">にぎわい</span><h3>キッチンカーなど人が集まる企画</h3><p>スポーツをしない人も立ち寄れる、にぎわいの場をつくっています。</p></li>
     </ul>
   </div>
 </section>
@@ -217,7 +283,12 @@
 <!-- ============ 代表メッセージ ============ -->
 <section class="section message" id="message">
   <div class="container message-inner">
-    <figure class="message-photo"><img src="assets/img/photo-hightouch.png" alt="プレー中にハイタッチをする参加者"></figure>
+    <figure class="message-photo">
+      <picture>
+        <source srcset="assets/img/photo-hightouch.webp" type="image/webp">
+        <img src="assets/img/photo-hightouch.png" alt="プレー中にハイタッチをする参加者" width="430" height="420" loading="lazy">
+      </picture>
+    </figure>
     <div class="message-text">
       <p class="section-en">MESSAGE</p>
       <h2>代表メッセージ</h2>
@@ -230,7 +301,7 @@
 </section>
 
 <!-- ============ 賛助会員・協賛 ============ -->
-<section class="section support" id="support">
+<section class="section support" id="support" tabindex="-1">
   <div class="container">
     <div class="section-head">
       <p class="section-en">SUPPORT</p>
@@ -274,7 +345,7 @@
 </section>
 
 <!-- ============ お問い合わせ ============ -->
-<section class="section contact" id="contact">
+<section class="section contact" id="contact" tabindex="-1">
   <div class="container contact-inner">
     <div class="contact-text">
       <p class="section-en">CONTACT</p>
@@ -300,7 +371,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <img src="assets/img/logo-kenko.png" alt="" width="56" height="56">
+      <img src="assets/img/logo-kenko.png" alt="" width="56" height="56" loading="lazy">
       <div>
         <p class="footer-name"><small>一般社団法人</small>ふくしま健康デザイン</p>
         <p class="footer-tagline">健康づくりで、人と人、人と地域をつなぐ</p>
@@ -311,7 +382,7 @@
       <a href="https://walking-football.fc-mehikari.org/" target="_blank" rel="noopener">FCメヒカリ</a>
       <a href="https://heroes.fc-mehikari.org/" target="_blank" rel="noopener">HEROES勿来店</a>
       <a href="https://lin.ee/XJcU9Vw" target="_blank" rel="noopener">LINE公式</a>
-      <img class="footer-mehikari" src="assets/img/logo-mehikari-circle.png" alt="FCメヒカリ" width="64" height="64">
+      <img class="footer-mehikari" src="assets/img/logo-mehikari-circle.png" alt="" width="236" height="210" loading="lazy">
     </div>
   </div>
   <p class="copyright">© 一般社団法人ふくしま健康デザイン</p>
