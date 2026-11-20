@@ -41,7 +41,7 @@
   if (!('IntersectionObserver' in window) ||
       window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  var targets = document.querySelectorAll('.section-head, .biz, .value-card, .activity-grid li, .sports-grid li, .plan, .support-box, .message-inner, .stat-list li');
+  var targets = document.querySelectorAll('.section-head, .biz, .value-card, .tl-item, .sports-grid li, .plan, .support-box, .message-inner, .stat-list li');
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
