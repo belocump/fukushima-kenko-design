@@ -131,6 +131,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
 .hero-photo-main { right: 0; top: 0; width: 64%; height: 100%; }
 .hero-photo-sub { left: 0; bottom: -20px; width: 46%; aspect-ratio: 1 / 1; border: 6px solid var(--green); }
+.hero-photo-wide { width: 58%; aspect-ratio: 900 / 586; }
 .hero-badge {
   position: absolute; left: 6%; top: 6%;
   width: 136px; height: 136px; border-radius: 50%;
@@ -295,12 +296,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- 事業 ---------- */
 .business { background: var(--paper); }
-.biz { background: var(--cream); border-radius: 24px; overflow: hidden; }
-.biz-main { display: grid; grid-template-columns: 1fr 1.05fr; margin-bottom: 28px; border: 3px solid var(--green); }
+/* 3つの事業は同じ形のカード（左に写真・ロゴ、右に本文） */
+.biz {
+  display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  background: var(--cream); border-radius: 24px; overflow: hidden; border: 3px solid var(--green);
+}
+.biz + .biz { margin-top: 28px; }
+.biz-media { min-height: 340px; }
 .biz-photo { margin: 0; position: relative; }
 .biz-photo picture { position: absolute; inset: 0; }
 .biz-photo img { width: 100%; height: 100%; object-fit: cover; }
-.biz-main .biz-photo { min-height: 360px; }
 .biz-body { padding: 36px 36px 40px; }
 .biz-num {
   display: flex; align-items: center; gap: 10px;
@@ -311,12 +316,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   background: var(--orange); color: #201e18; align-items: center; justify-content: center; font-weight: 800;
 }
 .biz h3 {
-  font-size: clamp(1.4rem, 2.6vw, 1.85rem); color: var(--orange-text); font-weight: 800;
+  font-size: clamp(1.4rem, 2.6vw, 1.85rem); color: var(--green); font-weight: 800;
   padding-bottom: .4em; margin-bottom: .6em; border-bottom: 3px solid var(--green);
 }
-.biz-h3-sub { display: block; margin-top: .35em; font-size: .55em; font-weight: 700; color: var(--green); }
+.biz-h3-sub { display: block; margin-top: .35em; font-size: .55em; font-weight: 700; color: var(--orange-text); }
 .nowrap { white-space: nowrap; }
-.biz-main h3 { color: var(--green); }
 .biz-catch { font-family: var(--font-head); font-weight: 800; color: var(--orange-text); font-size: 1.1rem; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.2em; }
 .tag-list li {
@@ -325,11 +329,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .tag-list li:last-child { background: var(--orange); color: #201e18; }
 
-.biz-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.biz-sub { display: flex; flex-direction: column; }
-.biz-logo { background: var(--green); display: flex; align-items: center; justify-content: center; height: 220px; padding: 32px; }
+.biz-logo { background: var(--green); display: flex; align-items: center; justify-content: center; padding: 32px; }
 .biz-logo img { max-height: 150px; width: auto; filter: brightness(0) invert(1); opacity: .95; }
-.biz-photo-sm { height: 220px; }
 .biz-rules { display: block; margin-top: 1.2em; }
 .biz-rules img { border-radius: 12px; }
 .info-box { background: var(--paper); border-radius: 14px; padding: 14px 18px; margin: 0 0 1.2em; }
@@ -345,9 +346,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .text-link:hover { color: var(--orange-text); border-color: var(--orange-text); }
 
 @media (max-width: 900px) {
-  .biz-main { grid-template-columns: 1fr; }
-  .biz-main .biz-photo { min-height: 240px; height: 260px; }
-  .biz-row { grid-template-columns: 1fr; }
+  .biz { grid-template-columns: 1fr; }
+  .biz-media { min-height: 0; height: 240px; }
 }
 @media (max-width: 480px) { .biz-body { padding: 26px 20px 30px; } }
 
@@ -379,6 +379,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .tl-photo { display: block; }
 .tl-photo img { display: block; width: 100%; height: auto; aspect-ratio: 480 / 251; object-fit: cover; border-radius: 10px; background: var(--green-soft); }
 .tl-body { min-width: 0; }
+.tl-key .tl-card { border: 2px solid var(--orange); }
+.tl-key .act-tag { background: var(--orange); color: var(--ink); }
 .tl-card h4 { font-size: 1.05rem; color: var(--green); margin: 0 0 .35em; line-height: 1.5; }
 .tl-card p { font-size: .9rem; color: var(--ink-sub); margin: 0; line-height: 1.7; }
 .tl-link { display: inline-block; margin-top: .6em; font-size: .82rem; font-weight: 700; color: var(--green); }
